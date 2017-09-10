@@ -1,21 +1,11 @@
-var recipes = {};
-
-function updateObjectWithKeyAndValue(object, key, value){
-    return Object.assign({}, object, { [key]: value });
+const artistsAndSongs = {
+  'Prince': ["Purple Rain", "When Doves Cry"],
+  'The Beatles': ["Revolution", "Norwegian Wood"],
+  'Joni Mitchell': ["A Case of You", "Sunny Sunday"],
+  'Justin Bieber': ["Baby"]
 }
-
-function destructivelyUpdateObjectWithKeyAndValue(object, key, value){
-     object[key] = value;
-     return object;
-}
-
-function deleteFromObjectByKey(object, key){
-    var newobj = Object.assign({}, object);
-    delete newobj[key];
-    return newobj;
-}
-
-function destructivelyDeleteFromObjectByKey(object, key){
-    delete object[key];
-    return object;
-}
+ 
+artistsAndSongs['Daft Punk'] = ["Harder, Better, Faster, Stronger"]
+ 
+delete artistsAndSongs["Justin Bieber"]
+consol.log(artistsAndSongs);
