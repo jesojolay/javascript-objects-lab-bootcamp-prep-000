@@ -4,8 +4,8 @@ const artistsAndSongs = {
   'Joni Mitchell': ["A Case of You", "Sunny Sunday"],
   'Justin Bieber': ["Baby"]
 }
- 
+
 artistsAndSongs['Daft Punk'] = ["Harder, Better, Faster, Stronger"]
- 
+
 delete artistsAndSongs["Justin Bieber"]
-consol.log(artistsAndSongs);
+console.log(artistsAndSongs);
