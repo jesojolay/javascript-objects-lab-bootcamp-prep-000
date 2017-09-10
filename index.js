@@ -7,5 +7,6 @@ const artistsAndSongs = {
 
 artistsAndSongs['Daft Punk'] = ["Harder, Better, Faster, Stronger"]
 
-delete artistsAndSongs["Justin Bieber"]
+delete artistsAndSongs["Justin Bieber"];
+artistsAndSongs['Daft Punk'].push("Around the World");
 console.log(artistsAndSongs);
